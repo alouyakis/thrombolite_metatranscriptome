@@ -193,20 +193,3 @@ extract_GO_assignments_from_Trinotate_xls.pl  \
 ## get name map
 Trinotate_get_feature_name_encoding_attributes.pl trinotate_annotation_report.xls > trinotate_annotation_report.xls.name_mappings
 ```
-
-#### Secondary analysis
-
-Quality Control
-- filter out contigs with <10 RSEM estimate
-- ARSyNseq for batch correction
-- TMM normalization
-
-Differential Expression
-- NOISeq
-
-DE plots
-- volcano plots
-
-Pathway Analysis
-- network
-- bar plots
