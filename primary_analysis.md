@@ -208,4 +208,5 @@ DE plots
 - volcano plots
 
 Pathway Analysis
--
+- network
+- bar plots
