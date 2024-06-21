@@ -62,12 +62,12 @@ Trinity --seqType fq --max_memory 400G --trimmomatic --normalize_reads --CPU 20 
   --right \
     ad1t12_non_rrna_r2.fastq,ad1t18_non_rrna_r2.fastq,ad1t24_non_rrna_r2.fastq,ad1t6_non_rrna_r2.fastq,ad3t12_non_rrna_r2.fastq,ad3t18_non_rrna_r2.fastq,ad3t24_non_rrna_r2.fastq,ad3t6_non_rrna_r2.fastq,md2t12_non_rrna_r2.fastq,md2t18_non_rrna_r2.fastq,md2t24_non_rrna_r2.fastq,md2t6_non_rrna_r2.fastq,md3t12_non_rrna_r2.fastq,md3t18_non_rrna_r2.fastq,md3t24_non_rrna_r2.fastq,md3t6_non_rrna_r2.fastq,od2t12_non_rrna_r2.fastq,od2t18_non_rrna_r2.fastq,od2t24_non_rrna_r2.fastq,od2t6_non_rrna_r2.fastq,od3t12_non_rrna_r2.fastq,od3t18_non_rrna_r2.fastq,od3t24_non_rrna_r2.fastq,od3t6_non_rrna_r2.fastq
 
-/apps/trinity/r20160329-2.2.0/util/support_scripts/get_Trinity_gene_to_trans_map.pl Trinity.fasta > Trinity.fasta.gene_trans_map
+get_Trinity_gene_to_trans_map.pl Trinity.fasta > Trinity.fasta.gene_trans_map
 
 TrinityStats.pl Trinity.fasta
 
 ## gff for downstream plot
-gmhmmp -d -f g -m /apps/genemark/metagenemark/3.26/bin/MetaGeneMark_v1.mod Trinity.filtered.fasta -o Trinity.filtered.gff
+gmhmmp -d -f g -m MetaGeneMark_v1.mod Trinity.filtered.fasta -o Trinity.filtered.gff
 ```
 
 Alignment
@@ -84,7 +84,7 @@ ASSEMBLY="~/metatranscriptome/trinity_out"
 INPUT_PATH=$(ls ${DATA_DIR}/*non_rrna_r1.fq | sed -n "${RUN} p" | sed 's/_non_rrna_r1.fq//' )
 SAMPLE=$(basename ${INPUT_PATH})
 
-/isg/shared/apps/trinity/2.6.6/util/align_and_estimate_abundance.pl \
+align_and_estimate_abundance.pl \
   --transcripts ${ASSEMBLY}/Trinity.fasta \
   --seqType fq \
   --left ${DATA_DIR}/${SAMPLE}_non_rrna_r1.fq \
