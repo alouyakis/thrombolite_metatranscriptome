@@ -1,4 +1,4 @@
-#### [A year in the life of a thrombolite: comparative metatranscriptomics reveals dynamic metabolic changes over diel and seasonal cycles](https://enviromicro-journals-onlinelibrary-wiley-com.ezproxy.lib.uconn.edu/doi/full/10.1111/1462-2920.14029)  
+#### [A year in the life of a thrombolite: comparative metatranscriptomics reveals dynamic metabolic changes over diel and seasonal cycles](https://pubmed.ncbi.nlm.nih.gov/29266662/)  
 Artemis S. Louyakis, Hadrien Gourlé, Giorgio Casaburi, Rachelle M. E. Bonjawo, Alexandrea A. Duscher, Jamie S. Foster  
 
 Samples were collected at 6am, 12pm, 12am, and 6pm over three days in three seasons/months March, August, and October and sequenced (2x150, 550 bp insert) in duplicate with each duplicate being a separate day. Additional samples are stored in RNAlater at -80&deg in the Foster Lab. This study examined 24 samples.  
